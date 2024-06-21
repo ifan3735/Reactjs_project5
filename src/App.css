@@ -1,0 +1,123 @@
+/* src/App.css */
+body {
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background: url('./assets/images/bg-desktop-light.jpg') no-repeat center center fixed;
+  background-size: ;
+  color: #333;
+}
+
+body.dark {
+  background: url('./assets/images/bg-desktop-dark.jpg') no-repeat center center fixed;
+  background-size: ;
+  color: #ddd;
+}
+
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.theme-toggle {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #357ab8;
+}
+
+.new-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.new-todo input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+  background: #555;
+  color: #fff;
+}
+
+.new-todo button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.new-todo button:hover {
+  background: #388e3c;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #333;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #f44336;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-item button:hover {
+  background: #d32f2f;
+}
+
+input::placeholder {
+  color: #bbb;
+}
